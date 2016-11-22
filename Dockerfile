@@ -23,7 +23,7 @@ RUN apt-get -y install r-base=${R_BASE_VERSION}* \
 ENV PYTHONPATH='.'
 
 # install python packages
-RUN pip install -r requirements.txt
+#RUN pip install -r requirements.txt
 
 # setup R configs
 RUN echo "r <- getOption('repos'); r['CRAN'] <- 'http://cran.us.r-project.org'; options(repos = r);" > ~/.Rprofile
