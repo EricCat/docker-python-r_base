@@ -1,0 +1,17 @@
+gunicorn==19.6.0
+Flask==0.11.1
+Flask-Moment==0.5.1
+Flask-Script==2.0.5
+celery==3.1.23
+numpy==1.11.1
+requests==2.11.1
+boto3==1.4.0
+boto==2.42.0
+pymongo==3.3.0
+jsonmerge==1.2.1
+nltk==3.2.1
+PyYAML==3.11
+future==0.15.2
+beautifulsoup4==4.5.1
+elasticsearch-dsl==2.1.0
+fake-useragent==0.1.2
