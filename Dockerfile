@@ -27,6 +27,11 @@ RUN Rscript -e "install.packages('xts')"
 RUN Rscript -e "install.packages('outliers')"
 RUN Rscript -e "install.packages('stlplus')"
 
+# root path
+RUN mkdir -p /var/www/app
+COPY . /var/www/app
+WORKDIR /var/www/app
+
 # install python packages
 RUN pip install -r requirements.txt
 RUN pip install --upgrade lxml
